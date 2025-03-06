@@ -125,12 +125,22 @@ export default function PersonalInfo({ data, setData }) {
             </button>
           </div>
           <div className="mt-2 text-center">
-            <p className="text-sm">
-              {formData.phone} 
-              | <a href={`mailto:${formData.email}`} target="_self" rel="noreferrer" className="underline">{formData.email}</a> 
-              | <a href={formData.linkedinLink} target="_self" rel="noreferrer" className="underline">LinkedIn</a> 
-              | <a href={formData.githubLink} target="_self" rel="noreferrer" className="underline">GitHub</a>
-            </p>
+          <p className="text-sm">
+            {formData.phone}{' '}
+            {'|'}{' '}
+            <a href={`mailto:${formData.email}`} target="_self" rel="noreferrer" className="underline">
+              {formData.email}
+            </a>{' '}
+            {'|'}{' '}
+            <a href={formData.linkedinLink} target="_self" rel="noreferrer" className="underline">
+              LinkedIn
+            </a>{' '}
+            {'|'}{' '}
+            <a href={formData.githubLink} target="_self" rel="noreferrer" className="underline">
+              GitHub
+            </a>
+          </p>
+
           </div>
         </div>
       )}
