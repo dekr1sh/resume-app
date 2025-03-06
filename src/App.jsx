@@ -87,8 +87,8 @@ function App() {
   const defaultTechnicalSkills = {
     languages: "Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R",
     frameworks: "React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI",
-    developmentTools: "Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse",
-    libraries: " pandas, NumPy, Matplotlib"
+    developmentTools: "Git, Docker, TravisCI, Google Cloud Platform, VS Code",
+    libraries: "Pandas, NumPy, Matplotlib"
   };
 
   const [personalInfo, setPersonalInfo] = useState(defaultPersonalInfo);
@@ -98,7 +98,7 @@ function App() {
   const [technicalSkills, setTechnicalSkills] = useState(defaultTechnicalSkills);
 
   return (
-    <div>
+    <div className="container mx-auto max-w-4xl p-4 my-8 bg-white shadow-lg">
       <PersonalInfo data={personalInfo} setData={setPersonalInfo} />
       <Education data={education} setData={setEducation} />
       <Experience data={experience} setData={setExperience} />
